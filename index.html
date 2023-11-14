@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>pagina com imagens</title>
+<style>
+    #image2 {
+        display: none; /* inicia com a segunda imagem escolhida */ 
+    }
+</style>
+<script>
+    document.getElementById('exibir-segunda-imagem').addEventListener('click', mostrarSegundaImagem);{
+        var img1 = document.getElementById("image1");
+        var img2 = document.getElementById("image2");
+
+        img1.style.display = "none"; // Esconde a primeira imagem
+        img2.style.display = "inline"; // Mostra a segunda imagem
+
+    }
+</script>
+</head>
+<body>
+    <h1>Página com imagens</h1>
+
+    <img id="image1" src="https://raw.githubusercontent.com/HybridShivam/Pokemon/master/assets/images/031.png" alt="Primeira imagem">
+    <img id="image2" src="https://raw.githubusercontent.com/HybridShivam/Pokemon/master/assets/images/031.png" alt="Segunda imagem">
+
+    <br><br>
+
+    <button id="exibir-segunda-imagem">Exibir Segunda Imagem</button>
+
+</body>
+
+</html>
